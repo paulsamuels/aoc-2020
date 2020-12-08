@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "aoc",
     targets: [
-        .target(name: "aoc", dependencies: ["Day1", "Day2", "Day3", "Day4", "Day5", "Day6", "Day7"]),
+        .target(name: "aoc", dependencies: ["Day1", "Day2", "Day3", "Day4", "Day5", "Day6", "Day7", "Day8"]),
         
         .target(name: "Day1", resources: [.process("input.txt")]),
         .testTarget(name: "Day1Tests", dependencies: ["Day1"]),
@@ -28,5 +28,8 @@ let package = Package(
         
         .target(name: "Day7", resources: [.process("input.txt")]),
         .testTarget(name: "Day7Tests", dependencies: ["Day7"]),
+        
+        .target(name: "Day8", resources: [.process("input.txt")]),
+        .testTarget(name: "Day8Tests", dependencies: ["Day8"]),
     ]
 )
